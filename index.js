@@ -85,30 +85,116 @@
 
 // Конкотенация строк
 
-console.log( 'arr' + ' object');
-console.log(5 + ' - длина массива');
+// console.log( 'arr' + ' object');
+// console.log(5 + ' - длина массива');
 
-// инеркемент и декремент
-// в чем разница прежфиксной и посфиксной 
+// // инеркемент и декремент
+// // в чем разница прежфиксной и посфиксной 
 
-let incr = 10,
-    decr = 10;
-
-
-console.log(++incr);
-console.log(decr--);
-console.log(5%2); // 5%2 = 1
-
-    /* 
-    = оператор присваивания
-    == сравнивание по значению
-    === приравнивание типа данных
-    */
+// let incr = 10,
+//     decr = 10;
 
 
-// логические операторы || и &&
+// console.log(++incr);
+// console.log(decr--);
+// console.log(5%2); // 5%2 = 1
 
-let isChecked = true,
-    isClose  = false;
+//     /* 
+//     = оператор присваивания
+//     == сравнивание по значению
+//     === приравнивание типа данных
+//     */
+
+
+// // логические операторы || и &&
+
+// let isChecked = true,
+//     isClose  = false;
     
-console.log(isChecked || isClose)
+// console.log(isChecked || isClose)
+
+
+// Циклы
+
+// For While Do while
+
+// let num = 1;
+
+
+// while (num < 100){
+//     console.log(num)
+//     num =+ num + num;
+// }
+
+
+// Массивы это объекты которые содержать элементы по порядку
+
+// let arr = new Array(1,2,3,4,5,6,7,8,9,10);
+
+// console.log(arr)
+
+// arr.pop()
+// console.log(arr)
+// arr.push(11);
+// console.log(arr)
+// arr.shift();
+// console.log(arr)
+// arr.unshift(0)
+// console.log(arr)
+
+// for (item of arr){ 
+//     console.log(item);
+// }
+
+
+// FOREACH
+
+// arr.forEach(
+//     (item, idx) => {
+//         console.log(item + " является " + idx + " элементом по счету" )
+//     }
+// )
+
+// For of || for in
+
+// for ( key in arr){
+//     console.log(key);
+// }
+
+// for (item of arr){
+//     console.log(item)
+// }
+
+
+
+
+// let nArr = [
+//     "asda",
+//     'adasd',
+//     "afghlkjd"
+// ], i = nArr.join();
+
+// console.log(i)
+
+// let b = i.split(",")
+// console.log(b)
+
+
+
+//OOP
+
+let solider = {
+    healt: 400,
+    armor: 100
+}
+
+let john = {
+    healt: 100
+    // armor: 0
+}
+
+john.__proto__ = solider;
+
+
+console.log(john);
+console.log(john.armor)
