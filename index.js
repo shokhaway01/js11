@@ -210,14 +210,13 @@
 
 // setTimeout(sayHI,1500);
 
-let time = 1;
 
 
 // let interval = () => {
-//     while (time <= 60){
-//         setInterval(
-//             () => {
-//                 console.log("Hello world");
+    //     while (time <= 60){
+        //         setInterval(
+            //             () => {
+                //                 console.log("Hello world");
 //                 console.log(time);
 //                 time++;
 //             },1000
@@ -226,15 +225,18 @@ let time = 1;
 // }
 
 // interval();
+let time = 0;
 
 let fank = setInterval(() => {
-    console.log(`Hello World ${time} - seconds`);
-    time++;
+    if(time > 60){
+        clearInterval(fank);
+    }else{
+        console.log(`Hello World ${time} - seconds`);
+        time++;
+    }
 }, 1000);
 
-if(time <= 60){
-    clearInterval(fank)
-}
+
 
 
 
