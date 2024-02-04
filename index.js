@@ -183,18 +183,38 @@
 
 //OOP
 
-let solider = {
-    healt: 400,
-    armor: 100
+// let solider = {
+//     healt: 400,
+//     armor: 100
+// }
+
+// let john = {
+//     healt: 100
+//     // armor: 0
+// }
+
+// john.__proto__ = solider;
+ 
+
+// console.log(john);
+// console.log(john.armor)
+
+
+// Делегирование событий!
+
+// let ism = prompt();
+
+function sayHI() {
+    alert("Honda")
 }
 
-let john = {
-    healt: 100
-    // armor: 0
+setTimeout(sayHI,1500);
+
+let time = 0;
+
+while (time <= 60) {
+     setInterval(() => {
+        console.log(`Hello world ${time} seconds`);
+        time++
+     }, 1000);
 }
-
-john.__proto__ = solider;
-
-
-console.log(john);
-console.log(john.armor)
