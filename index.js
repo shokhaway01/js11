@@ -204,17 +204,26 @@
 
 // let ism = prompt();
 
-function sayHI() {
-    alert("Honda")
+// function sayHI() {
+//     alert("Honda")
+// }
+
+// setTimeout(sayHI,1500);
+
+let time = 1;
+
+
+let interval = () => {
+    while (time <= 60){
+        setInterval(
+            () => {
+                console.log("Hello world");
+                console.log(time);
+                time++;
+            },1000
+        )
+    }
 }
 
-setTimeout(sayHI,1500);
 
-let time = 0;
 
-while (time <= 60) {
-     setInterval(() => {
-        console.log(`Hello world ${time} seconds`);
-        time++
-     }, 1000);
-}
