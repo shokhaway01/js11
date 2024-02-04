@@ -225,16 +225,16 @@
 // }
 
 // interval();
-let time = 0;
+// let time = 0;
 
-let fank = setInterval(() => {
-    if(time > 60){
-        clearInterval(fank);
-    }else{
-        console.log(`Hello World ${time} - seconds`);
-        time++;
-    }
-}, 1000);
+// let fank = setInterval(() => {
+//     if(time > 60){
+//         clearInterval(fank);
+//     }else{
+//         console.log(`Hello World ${time} - seconds`);
+//         time++;
+//     }
+// }, 1000);
 
 
 

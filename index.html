@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: linear-gradient(red , yellow);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #container{
+            width: 500px;
+            height: 500px;
+            background-color: #fff;
+            padding: 5px;
+            border: 3px solid black;
+        }
+        .kubik{
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(50deg,pink, blue);
+        }
+    </style>
 </head>
 <body>
+
+    <div id="container">
+        <div class="kubik">
+
+        </div>
+    </div>
+
     <script src="./index.js"></script>
 </body>
 </html>
