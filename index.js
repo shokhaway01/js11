@@ -213,16 +213,27 @@
 let time = 1;
 
 
-let interval = () => {
-    while (time <= 60){
-        setInterval(
-            () => {
-                console.log("Hello world");
-                console.log(time);
-                time++;
-            },1000
-        )
-    }
+// let interval = () => {
+//     while (time <= 60){
+//         setInterval(
+//             () => {
+//                 console.log("Hello world");
+//                 console.log(time);
+//                 time++;
+//             },1000
+//         )
+//     }
+// }
+
+// interval();
+
+let fank = setInterval(() => {
+    console.log(`Hello World ${time} - seconds`);
+    time++;
+}, 1000);
+
+if(time <= 60){
+    clearInterval(fank)
 }
 
 
