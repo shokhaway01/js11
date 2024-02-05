@@ -47,6 +47,7 @@ let shoh = new Odam("Shohjaxon",17,"man"),
 
 
 
+
 let dunk = () =>{
     console.log("Hello Azamat");
 }
