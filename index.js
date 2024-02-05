@@ -236,53 +236,68 @@
 //     }
 
 
-let container = document.querySelector('#container'),
-    kubik = document.querySelector(".kubik");
+// let container = document.querySelector('#container'),
+//     kubik = document.querySelector(".kubik");
 
-function animation() {
-    let position = 0;
+// function animation() {
+//     let position = 0;
 
-    let id = setInterval(frame,10);
+//     let id = setInterval(frame,10);
 
-    function frame() {
-        if(position == 406){
-            clearInterval(id);
-            console.log("done")
-        }else{
-            position++;
-            kubik.style.top = position + "px";
-            kubik.style.left = position + "px";
-        }
-    }
-}
+//     function frame() {
+//         if(position == 406){
+//             clearInterval(id);
+//             console.log("done")
+//         }else{
+//             position++;
+//             kubik.style.top = position + "px";
+//             kubik.style.left = position + "px";
+//         }
+//     }
+// }
 
-function animationContainer() {
-    let size = 500;
+// function animationContainer() {
+//     let size = 500;
 
-    let id2 = setInterval(frame,10);
+//     let id2 = setInterval(frame,10);
 
-    function frame() {
-        if (size == 601){
-            clearInterval(id2);
-        }else{
-            size++;
-            container.style.width = size + "px";
-            container.style.height = size + "px";
-            container.style.background = "linear-gradient(30deg, red,skyblue)";
-            container.style.transition = "ease in out"
-        }
-    }
-}
-
-
-kubik.addEventListener("click", () => {
-    animation();
-    animationContainer();
-})
-
-console.log(kubik)
-console.log(container)
+//     function frame() {
+//         if (size == 601){
+//             clearInterval(id2);
+//         }else{
+//             size++;
+//             container.style.width = size + "px";
+//             container.style.height = size + "px";
+//             container.style.background = "linear-gradient(30deg, red,skyblue)";
+//             container.style.transition = "ease in out"
+//         }
+//     }
+// }
 
 
+// kubik.addEventListener("click", () => {
+//     animation();
+//     animationContainer();
+// })
+
+// console.log(kubik)
+// console.log(container)
 
 
+
+
+// let dunk = () =>{
+//     console.log("Hello Azamat");
+// }
+
+// console.log(dunk)
+
+
+// let shkola = {
+//     class: 7,
+//     rost: 1.68
+// };
+
+// console.log(shkola)
+
+console.log("hello world");
