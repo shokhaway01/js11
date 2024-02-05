@@ -46,24 +46,6 @@ let shoh = new Odam("Shohjaxon",17,"man"),
     odina = new Odam("Odina",21,"woman");
 
 
-// console.log(`#############################################`);
-// shoh.greeting();
-// shoh.showGender();
-// console.log(`#############################################`);
-
-//
-
-// beha.greeting();
-// beha.showGender();
-// console.log(`#############################################`);
-
-//
-
-// odina.greeting();
-// odina.showGender();
-// console.log(`#############################################`);
-
-
 
 let dunk = () =>{
     console.log("Hello Azamat");
