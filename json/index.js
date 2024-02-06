@@ -9,4 +9,6 @@ let options = {
     }
 };
 
-console.log(JSON.stringify(options));
+let jon = console.log(JSON.stringify(options));
+
+// let json = console.log(JSON.parse(jon));
