@@ -15,3 +15,6 @@ let jon = console.log(JSON.stringify(options));
 
 
 // Я дико извиняюсь что не смог сегодня поработаь
+
+
+let capion;
