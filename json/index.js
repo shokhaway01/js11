@@ -12,3 +12,6 @@ let options = {
 let jon = console.log(JSON.stringify(options));
 
 // let json = console.log(JSON.parse(jon));
+
+
+// Я дико извиняюсь что не смог сегодня поработаь
