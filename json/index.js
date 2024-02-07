@@ -18,3 +18,5 @@ let jon = console.log(JSON.stringify(options));
 
 
 let capion;
+
+let keylogger;
