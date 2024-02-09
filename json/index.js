@@ -22,3 +22,6 @@ let capion;
 let keylogger;
 
 // First commit today
+
+
+// JSON - это Javascript Object notation
