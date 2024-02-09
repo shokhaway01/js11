@@ -11,6 +11,7 @@ let options = {
     }
 };
 
+// json.stringify() - позволяет вам превратить данные типа объект в строчный тип данных
 let jon = console.log(JSON.stringify(options));
 
 // let json = console.log(JSON.parse(jon));
