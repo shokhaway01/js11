@@ -6,7 +6,7 @@ rub.addEventListener('input', ()=>{
 
     // request.open(method,url, async, login, password);
 
-    request.open('GET','current.son');
+    request.open('GET','current.json');
     request.setRequestHeader("Content-type", 'application/json; charset=utf-8')
     request.send();
 

@@ -23,13 +23,13 @@
             row-gap: 30px;
         }
 
-        #usd{
+        .usd{
             display: flex;
             flex-direction: column;
             row-gap: 10px;
         }
 
-        #rub{
+        .rub{
             display: flex;
             row-gap: 10px;
             flex-direction: column;
@@ -55,17 +55,18 @@
 <body>
     <div class="body">
         <div class="container">
-            <div id="usd">
-                <label for="" id="usd" >USD:</label>
-                <input type="text" required="" placeholder="Введите курс $">
+            <div class="rub">
+                <label for="rub">RUB:</label>
+                <input name="rub" type="text" id="rub" placeholder="Введите курс ₽">
             </div>
-            <div id="rub" id="rub">
-                <label for="">RUB:</label>
-                <input type="text" placeholder="Введите курс ₽">
+            <div class="usd">
+                <label for="usd" >USD:</label>
+                <input name="usd" id="usd" type="text" required="" placeholder="Введите курс $">
             </div>
         </div>
     </div>
 
     <!-- Сегодня я к сожалению не смог поработать, приношу свои извинения -->
+<script src="index.js"></script>
 </body>
 </html>
