@@ -15,4 +15,14 @@ rub.addEventListener('input', ()=>{
     //responseText || текст ответа сервера
     //response тоже самое
     //readyState
+
+    //Практика
+
+    request.addEventListener('readystatechange', () =>{
+        if ( request.readyState == 4 && request.status == 200){
+            let data = JSON.parse(request.response);
+
+            usd.value = rub.value / data.usd
+        }
+    });
 });
