@@ -22,7 +22,9 @@ rub.addEventListener('input', ()=>{
         if ( request.readyState == 4 && request.status == 200){
             let data = JSON.parse(request.response);
 
-            usd.value = rub.value / data.usd
+            usd.value = rub.value / data.usd;
+        }else{
+            usd.value = "Что-то не так!";
         }
     });
 });
