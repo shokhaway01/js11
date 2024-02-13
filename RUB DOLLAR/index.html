@@ -11,7 +11,17 @@
             transition: 0.3s ease-in-out;
         }
         body{
+            background: linear-gradient(45deg, lightgreen, skyblue);
+        }
 
+        body::before{
+            content: '₽';
+            position: absolute;
+            font-size: 350px;
+            color: rgba(255, 255, 255, 0.336);
+            transform: rotate(-30deg);
+            left: 250px;
+            top: 150px;
         }
         .container{
             width: 100%;
@@ -20,7 +30,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: aqua;
+            /* background-color: aqua; */
             row-gap: 30px;
         }
 
