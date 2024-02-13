@@ -11,6 +11,9 @@
             transition: 0.3s ease-in-out;
         }
         body{
+            padding: 0;
+            margin: 0;
+            position: relative;
             background: linear-gradient(45deg, lightgreen, skyblue);
         }
 
@@ -20,8 +23,20 @@
             font-size: 350px;
             color: rgba(255, 255, 255, 0.336);
             transform: rotate(-30deg);
-            left: 250px;
-            top: 150px;
+            left: 100px;
+            top: 0;
+        }
+
+        body::after{
+            position: absolute;
+            content: '$';
+            z-index: 1000;
+            font-size: 300px;
+            color: black;
+            right: 80px;
+            bottom: 68px;
+            transform: rotate(30deg);
+            color: rgba(255, 255, 255, 0.336);
         }
         .container{
             width: 100%;
