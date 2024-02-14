@@ -23,8 +23,65 @@
             align-items: center;
         }
 
-        
+        .container{
+            background: linear-gradient(-45deg,rgba(255, 255, 255, 0.361),rgba(128, 128, 128, 0.535),rgba(255, 255, 255, 0.393));
+            width: 500px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            position: relative;
+            
+        }
 
+        .login--form{
+            display: flex;
+            flex-direction: column;
+            gap: 30px 0;   
+        }
+
+        .login--container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .username--container,.password--container{
+            display: flex;
+            flex-direction: column;
+            font-size: 25px;
+            margin-top: 35px;
+        }
+        .username--container input, .password--container input{
+            font-size: 15px;
+            padding: 15px 5px;
+        }
+
+        #success{
+            color: rgb(18, 252, 18);
+            font-size: 15px;
+            display: none;
+            font-weight: 650;
+        }
+        #not-success{
+            color: red;
+            font-size: 15px;
+            font-weight: 650;
+            display: none;
+        }
+
+        #button{
+            border: none;
+            width: 150px;
+            height: 30px;
+            margin: 20px 0;
+            justify-self: center;
+            align-self: center;
+            color: rgb(217, 235, 194);
+            font-weight: 650;
+            word-spacing: 3px;
+            background: linear-gradient(35deg, rgb(255, 0, 242), rgb(144, 200, 238));
+        }
     </style>
 </head>
 <body>
@@ -32,22 +89,31 @@
         
         <form action="" class="login--form">
         
-            <div class="">
-                <label for="">Username:</label>
-                <input type="text" placeholder="введите имя пользователя">
+            <div class="login--container">
+                <div class="username--container">
+                    <label for="login">Username:</label>
+                    <input id="login" type="text" placeholder="введите имя пользователя">
+                </div>
+    
+                <div class="password--container">
+                    <label for="password">Password:</label>
+                    <input id="password" type="text" placeholder="введите имя пользователя">
+                </div>
+                <div id="success">
+                    <label for="password">Вы успешно вошли в свой аккаунт</label>
+                </div>
+                <div id="not-success">
+                    <label for="password">Возможно ваши данные были <br>введены неправильно</label>
+                </div>
             </div>
-
-            <div class="">
-                <label for="">Password:</label>
-                <input type="text" placeholder="введите имя пользователя">
-            </div>
-
-            <button>
+            
+            
+            <button id="button">
                 Log In    
             </button>
-        
         </form>
-
+        
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
