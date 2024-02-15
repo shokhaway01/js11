@@ -8,6 +8,7 @@
         *{
             padding: 0;
             margin: 0;
+            transition: 1s all;
         }
         
         body{
@@ -81,6 +82,21 @@
             font-weight: 650;
             word-spacing: 3px;
             background: linear-gradient(35deg, rgb(255, 0, 242), rgb(144, 200, 238));
+            transition: 0.3 ease-in-out;
+        }
+        #button:hover{
+            background: linear-gradient(-35deg, rgb(255, 0, 242), rgb(144, 200, 238));
+            transition: 0.3s ease-in-out;
+        }
+        input{
+            background-color: #ffffffbb;
+            border-radius: 8px;
+        }
+        label{
+            color: white;
+            margin-left: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            letter-spacing: 3px;
         }
     </style>
 </head>
@@ -97,7 +113,7 @@
     
                 <div class="password--container">
                     <label for="password">Password:</label>
-                    <input id="password" type="text" placeholder="введите имя пользователя">
+                    <input id="password" type="password" placeholder="введите имя пользователя">
                 </div>
                 <div id="success">
                     <label for="password">Вы успешно вошли в свой аккаунт</label>
