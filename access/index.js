@@ -11,7 +11,7 @@ button.addEventListener("click", ()=>{
     request.send();
     
     request.addEventListener('readystatechange', function(){
-        if(request.readyState === 4 && request.status === 200){
+        if(request.readyState === 4 && request.status == 200){
             let data = JSON.parse(request.response);
             console.log(data);
             if(login.value == data.username && password.value == data.password){
