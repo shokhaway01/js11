@@ -16,12 +16,8 @@ button.addEventListener("click", ()=>{
             console.log(data);
             if(login.value == data.username && password.value == data.password){
                 alert("Успешно!");
-                // success.style.display = 'block';
-                // not_success.style.display = 'none';
                 
             }else{
-                // not_success.style.display = 'block';
-                // success.style.display = 'none';
                 alert("Неправильный логин или пароль. Попробуйте снова!")
             }
         }else{
