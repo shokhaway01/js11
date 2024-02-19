@@ -1,4 +1,7 @@
 {
     "username":"shokhaway",
-    "password":"123456"
+    "password":"123456",
+    "name":"shokha",
+    "age":26,
+    "gender":"male"
 }   
