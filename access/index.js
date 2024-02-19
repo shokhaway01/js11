@@ -21,7 +21,7 @@ button.addEventListener("click", ()=>{
                 alert("Неправильный логин или пароль. Попробуйте снова!")
             }
         }else{
-            console.log("Запрос не сработал!");
+            console.log("Запрос не сработал! ");
         }
     })
 })
