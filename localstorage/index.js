@@ -1,3 +1,3 @@
- localStorage.setItem("number",1);
-
-console.log(localStorage.getItem("number"));
+let store = localStorage.setItem("number",1);
+let storageOutput = localStorage.getItem("number");
+console.log(storageOutput);
