@@ -10,4 +10,3 @@ const person = {
 person.greet();
 console.log(person.toString());
 console.log(person);
-.
