@@ -5,7 +5,7 @@ const person = {
         console.log("greet");
     }
 }
-  //
+  // CTDU
 
 person.greet();
 console.log(person.toString());
