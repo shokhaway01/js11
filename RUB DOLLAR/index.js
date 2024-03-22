@@ -30,7 +30,7 @@ rub.addEventListener('input', ()=>{
     request.setRequestHeader("Content-type", 'application/json; charset=utf-8')
     request.send();
 
-    // status  || 404;0;202
+    // status  || 404;0;202 б
     //statusText || ok; not found
     //responseText || текст ответа сервера
     //response тоже самое
