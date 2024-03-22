@@ -32,7 +32,7 @@ rub.addEventListener('input', ()=>{
 
     // status  || 404;0;202 б
     //statusText || ok; not found
-    //responseText || текст ответа сервера
+    //responseText || текст ответа сервера ыф
     //response тоже самое
     //readyState
 
